@@ -1,0 +1,62 @@
+.pointBlock {
+  padding: 35px;
+  width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.45);
+  margin-top: 50px;
+  display: flex;
+  gap: 15px;
+
+  .inputBlock {
+    width: auto;
+    display: flex;
+    color: var(--gray);
+    gap: 10px;
+
+    .datePicker {
+      width: 125px;
+      border-radius: 15px;
+      padding: 10px;
+    }
+
+    .adressInput,
+    .rentInput {
+      padding: 7.5px 10px;
+      border-radius: 15px;
+      width: 300px;
+    }
+
+    .search {
+      position: relative;
+      z-index: 1;
+      left: 22.5px;
+      color: var(--gray);
+    }
+
+    .currency {
+      z-index: 1;
+      position: relative;
+      right: 15%;
+      color: var(--gray);
+    }
+
+    .adressInput {
+      padding: 7.5px 25px;
+    }
+
+    .rentInput {
+      margin-left: 50px;
+    }
+  }
+
+  .continue {
+    height: 50px;
+    border-radius: 15px;
+    padding: 15px;
+    width: 360px;
+    background-color: rgba(145, 158, 171, 0.2);
+    &:hover{
+        color: var(--gray);
+    }
+  }
+}

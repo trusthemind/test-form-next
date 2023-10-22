@@ -1,0 +1,65 @@
+.loginBlock {
+    padding: 35px;
+    max-width: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.45);
+    border-radius: 10px;
+    gap: 10px;
+
+    .loginForm {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .ant-form-item {
+            width: 200px !important;
+        }
+
+        .emailInput,
+        .passwordInput {
+            padding: 5px 20px;
+            width: 200px;
+        }
+
+        .forgotPassword {
+            color: var(--gray);
+            font-size: 12px;
+            text-align: center;
+            text-decoration: underline;
+
+            &:hover {
+                color: var(--uniq);
+                text-decoration: underline;
+            }
+        }
+
+        .mailIcon {
+            color: var(--gray);
+            top: 27px;
+            left: 5px;
+            z-index: 10;
+            position: relative;
+        }
+
+        .buttonsBlock {
+            div {
+                justify-content: center;
+            }
+
+            .buttonSubmits {
+                margin: 5px 0;
+                width: 240px;
+            }
+        }
+
+        .registerAcc {
+            color: var(--gray);
+            font-size: 12px;
+            text-align: center;
+
+            &:hover {
+                color: var(--uniq);
+            }
+        }
+    }
+}

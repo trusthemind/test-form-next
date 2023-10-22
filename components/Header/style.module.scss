@@ -1,0 +1,45 @@
+.header {
+    padding: 0 100px;
+    min-height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    .companyName {
+        position: relative;
+        right: 25%;
+        font-size: 26px;
+        font-style: italic;
+        color: var(--black);
+        text-decoration: none;
+
+        span {
+            font-size: 40px;
+            color: var(--uniq);
+        }
+    }
+
+    .points {
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+
+            li {
+                font-size: 16px;
+                border-radius: 10px;
+                padding: 7.5px 20px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+                width: 240px;
+                display: flex;
+                gap: 5px;
+
+                &:hover {
+                    color: var(--uniq);
+                }
+            }
+        }
+    }
+}
