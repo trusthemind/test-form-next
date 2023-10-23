@@ -26,7 +26,7 @@ const Login = () => {
   return (
     <div className={s.loginBlock + " container"}>
       <h2>
-        Welcome Back <span className={s.hand}>👋</span>
+        Welcome Back <span className={s.hand}>👋🏼</span>
       </h2>
       <Form
         form={form}
@@ -67,10 +67,14 @@ const Login = () => {
         <Link href={"#"} className={s.forgotPassword}>
           Forgot ur password?
         </Link>
-        <Form.Item className={s.buttonsBlock + " container"}>
+        <Form.Item className={s.buttonsBlock}>
           <Button type="primary" htmlType="submit" className={s.buttonSubmits}>
             Login
           </Button>
+          <div className={s.hrblock}>
+          <hr/>
+          <p className={s.hrtext}>or</p>
+          </div>
           <Button type="primary" htmlType="submit" className={s.buttonSubmits}>
             <GoogleOutlined />
             Sign in with Google

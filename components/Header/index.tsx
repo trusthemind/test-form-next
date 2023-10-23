@@ -7,6 +7,8 @@ import {
   BankOutlined,
 } from "@ant-design/icons";
 import Link from "next/link";
+import Image from "next/image";
+import logo from "@/public/icon.png"
 import { usePathname } from "next/navigation";
 
 const Header = () => {
@@ -15,7 +17,7 @@ const Header = () => {
   return (
     <div className={s.header}>
       <Link href="/" className={s.companyName}>
-        payr<span>.</span>
+       <Image src={logo} alt="logo"/>
       </Link>
 
       {path == "dashboard" && (

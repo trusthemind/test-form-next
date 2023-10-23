@@ -1,5 +1,5 @@
 .header {
-    padding: 0 100px;
+    padding: 25px 200px;
     min-height: 50px;
     display: flex;
     flex-direction: row;
@@ -7,17 +7,8 @@
     justify-content: center;
 
     .companyName {
-        position: relative;
-        right: 25%;
-        font-size: 26px;
-        font-style: italic;
-        color: var(--black);
-        text-decoration: none;
-
-        span {
-            font-size: 40px;
-            color: var(--uniq);
-        }
+        position: absolute;
+        left: 20px;
     }
 
     .points {
@@ -25,19 +16,30 @@
             list-style: none;
             display: flex;
             flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
             gap: 10px;
 
             li {
-                font-size: 16px;
+                font-size: 14px;
                 border-radius: 10px;
                 padding: 7.5px 20px;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+                border: 1px solid  #EAECF0;
                 width: 240px;
+                color: var(--gray);
+                padding: 16px;
                 display: flex;
-                gap: 5px;
+                align-items: center;
+                gap: 15px;
+                span{
+                    font-size: 20px;
+                }
 
                 &:hover {
                     color: var(--uniq);
+                    p{
+                        color: var(--gray);
+                    }
                 }
             }
         }

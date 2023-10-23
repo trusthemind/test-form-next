@@ -1,7 +1,7 @@
 "use client";
 import { DatePicker } from "antd";
 import { Button, Input } from "antd";
-import { SearchOutlined,ArrowRightOutlined } from "@ant-design/icons";
+import { SearchOutlined, ArrowRightOutlined } from "@ant-design/icons";
 import s from "./style.module.scss";
 const Picker = () => {
   return (
@@ -14,11 +14,11 @@ const Picker = () => {
         </div>
       </div>
       <div className={s.inputBlock}>
-        <DatePicker format={"MM.DD.YYYY"} className={s.datePicker} />
-        <ArrowRightOutlined/>
-        <DatePicker format={"MM.DD.YYYY"} className={s.datePicker} />
+        <DatePicker format={"MM.DD.YYYY"} placement="bottomLeft" className={s.datePicker} />
+        <ArrowRightOutlined />
+        <DatePicker format={"MM.DD.YYYY"} placement="bottomRight" className={s.datePicker} />
       </div>
-      <div className={s.inputBlock}>
+      <div className={s.rentalBlock}>
         <div>
           <Input
             placeholder="Rental Amount (Monthly)"
